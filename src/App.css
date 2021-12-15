@@ -1,38 +1,122 @@
+/*    INDEX OF CSS     */
+/*--------------------------------------------*/
+
+/* 1. General */
+/* 2. Home Component */
+/* 3. GroundList Component */
+/* 4. FavouriteList Component */
+/* 5. GroundDesc Component */
+
+/*--------------------------------------------*/
+/* 1. General  */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App li {
+  list-style: none;
+  justify-content: center;
+  align-content: center;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App li:hover {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*--------------------------------------------*/
+/* 2. Home component  */
+
+.Home {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+/*--------------------------------------------*/
+/* 3. GroundList component */
+
+.listContainer {
+  border : 1px solid black;
+  margin-bottom: 30px;
+}
+
+.listContainer button {
+  margin-bottom: 5px;
+}
+.groundContainer {
+  height: 30px;
+  width: 300px;
+}
+
+.groundList {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/*--------------------------------------------*/
+/* 4. FavouriteList Component  */
+
+.FavouriteList {
+  display: flex;
+  height: 600px;
+  width: 300px;
+  flex-direction: column;
+  border: 1px solid black;
+  background: #552553;
+}
+
+.FavouriteList h3 {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.favouriteListMap {
+  display: flex;
+  width: auto;
+  height: 40px;
+  justify-content: space-around;
+  background: #FDB227;
+  margin: 10px;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+.favouriteListMap li {
+  width: 200px;
+  margin-bottom: 20px;
+  padding: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*--------------------------------------------*/
+/* 5. GroundDesc Component */
+
+.GroundDesc {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+
+#descBtn {
+  height: 50px;
+  width: 250px;
+  background: #CE1141;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
 }
