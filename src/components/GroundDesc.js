@@ -53,7 +53,7 @@ function handleAddFavourite(nom, id) {
                 </div>
 
                 <div id='GroundSpecs'>
-                    <h3>Informations</h3>
+                    <h3>Détails du terrain</h3>
                     <p> Accessibilité : {descTarget.limit ? descTarget.limit : 'Inconnu' }</p> {/* L'opérateur ternaire permet d'afficher inconnu si la valeur n'est pas renseignée */}
                     <p>Nombre de paniers : {descTarget.basketNumber ? descTarget.basketNumber : 'Inconnu'}</p>
                     <p>S'y rendre : {descTarget.transport ? descTarget.transport : 'Inconnu'}</p>
